@@ -1,0 +1,72 @@
+:types:
+  4: :cottage
+  5: :marketplace
+  7: :sawmill
+  8: :mill
+  10: :stonemason
+  11: :foundry
+  13: :townhouse
+  14: :barracks
+  15: :guard_house
+  16: :training_ground
+  19: :shipyard
+  20: :warehouse
+  21: :castle
+  22: :harbor
+  23: :wall
+  40: :guardian_tower
+  41: :ranger_tower
+  47: :woodcutters
+  48: :querry
+  49: :ironmine
+  50: :farm
+
+:filters:
+  :castle_city: [8, 14, 15, 16, 19, 22, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 50]
+  :resource_city: [7, 8, 10, 11, 13, 14, 15, 16, 47, 48, 49, 50]
+  :for_new_city: [7, 10, 11, 47, 48, 49]
+
+:worlds:
+  59:
+    :settings:
+      :host: prodgame28.lordofultima.com
+      :path: /139/Presentation/Service.svc/ajaxEndpoint/
+      :session: adf38f6a-9def-4761-914d-240ea25d6b68
+      :cookie: s_ria=flash%2011%7Csilverlight%20not%20detected;s_cc=true; s_sq=%5B%5BB%5D%5D;__utma=74606733.205260829.1327229586.1330806969.1330836871.97;__utmb=74606733.1.10.1330836871; __utmc=74606733;__utmz=74606733.1330806969.96.54.utmcsr=prodgame28.lordofultima.com|utmccn=(referral)|utmcmd=referral|utmcct=/139/index.aspx
+      :referer: http://prodgame28.lordofultima.com/139/index.aspx
+    :cities:
+      'first city':
+        :id: 21168266
+        :filter: :castle_city
+      'Kiev':
+         :id: 21561490
+         :filter: :resource_city
+      'Odessa':
+        :id: 21430417
+        :filter: :resource_city
+      'Oslo':
+        :id: 21233801
+        :filter: :castle_city
+      'Sevlush':
+        :id: 21758098
+        :filter: :resource_city
+      'Sprite':
+        :id: 21627025
+        :filter: :resource_city
+      'Uzhgorod':
+        :id: 21692553
+        :filter: :resource_city
+      'Vinogradov':
+        :id: 21758087
+        :filter: :resource_city
+  :11:
+    :settings:
+      :host: prodgame01.lordofultima.com
+      :path: /151/Presentation/Service.svc/ajaxEndpoint/
+      :session: 7167f633-abe8-445d-8aa5-82156cc2838f
+      :cookie: s_ria=flash%2011%7Csilverlight%20not%20detected; s_cc=true; s_sq=%5B%5BB%5D%5D; __utma=74606733.205260829.1327229586.1331373555.1331377353.115; __utmb=74606733.2.10.1331377353; __utmc=74606733; __utmz=74606733.1331364299.112.66.utmcsr=prodgame28.lordofultima.com|utmccn=(referral)|utmcmd=referral|utmcct=/139/index.aspx
+      :referer: http://prodgame01.lordofultima.com/151/index.aspx
+    :cities:
+      'first city':
+        :id: 16253153
+        :filter: :for_new_city
