@@ -46,6 +46,9 @@ class City
         return unless response["r"]
       end
     end
+  rescue => ex
+    puts ex
+    sleep rand * 5 + 5
   end
 
   def filtered_buildings
@@ -73,6 +76,9 @@ class City
       self.list = item["D"]["q"] if item["C"] == "CITY"
       parse_buildings(item["D"]["u"]) if item["C"] == "VIS"
     end
+  rescue => ex
+    puts ex
+    sleep rand * 5 + 5
   end
 
   private
