@@ -23,7 +23,7 @@
 
 :filters:
   :castle_city: [8, 14, 15, 16, 19, 22, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 50]
-  :resource_city: [7, 8, 10, 11, 13, 14, 15, 16, 47, 48, 49, 50]
+  :resource_city: [7, 8, 10, 11, 14, 15, 16, 47, 48, 49, 50]
   :for_new_city: [7, 10, 11, 47, 48, 49]
 
 :worlds:
@@ -31,7 +31,7 @@
     :settings:
       :host: prodgame28.lordofultima.com
       :path: /139/Presentation/Service.svc/ajaxEndpoint/
-      :session: adf38f6a-9def-4761-914d-240ea25d6b68
+      :session: bc1613a1-2a7f-437b-9178-0745b7c16223
       :cookie: s_ria=flash%2011%7Csilverlight%20not%20detected;s_cc=true; s_sq=%5B%5BB%5D%5D;__utma=74606733.205260829.1327229586.1330806969.1330836871.97;__utmb=74606733.1.10.1330836871; __utmc=74606733;__utmz=74606733.1330806969.96.54.utmcsr=prodgame28.lordofultima.com|utmccn=(referral)|utmcmd=referral|utmcct=/139/index.aspx
       :referer: http://prodgame28.lordofultima.com/139/index.aspx
     :cities:
@@ -63,7 +63,7 @@
     :settings:
       :host: prodgame01.lordofultima.com
       :path: /151/Presentation/Service.svc/ajaxEndpoint/
-      :session: 7167f633-abe8-445d-8aa5-82156cc2838f
+      :session: 81978db7-6820-4864-91a7-5333446cb541
       :cookie: s_ria=flash%2011%7Csilverlight%20not%20detected; s_cc=true; s_sq=%5B%5BB%5D%5D; __utma=74606733.205260829.1327229586.1331373555.1331377353.115; __utmb=74606733.2.10.1331377353; __utmc=74606733; __utmz=74606733.1331364299.112.66.utmcsr=prodgame28.lordofultima.com|utmccn=(referral)|utmcmd=referral|utmcct=/139/index.aspx
       :referer: http://prodgame01.lordofultima.com/151/index.aspx
     :cities:

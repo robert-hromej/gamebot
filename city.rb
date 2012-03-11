@@ -76,6 +76,7 @@ class City
       self.list = item["D"]["q"] if item["C"] == "CITY"
       parse_buildings(item["D"]["u"]) if item["C"] == "VIS"
     end
+    sleep rand * 5 + 5
   rescue => ex
     puts ex
     sleep rand * 5 + 5
