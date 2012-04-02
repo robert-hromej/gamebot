@@ -1,11 +1,10 @@
 class Building
-
   attr_accessor :id, :type, :level
 
-  def initialize(options)
-    self.id = options["i"]
-    self.type = options["v"]
-    self.level = options["l"]
+  def initialize attributes
+    self.id = attributes["i"]
+    self.type = attributes["v"]
+    self.level = attributes["l"]
 
     fix_type()
   end
@@ -14,7 +13,6 @@ class Building
     self.type = 35 if [291, 547, 804, 1060].include? self.type
     self.type = 36 if [292, 548, 805, 1061].include? self.type
     self.type = 37 if [293, 549, 806, 1062].include? self.type
-
     self.type = 38 if [294, 550, 806, 1062].include? self.type
     self.type = 39 if [295, 551, 807, 1063].include? self.type
     self.type = 40 if [296, 552, 808, 1064].include? self.type
@@ -27,11 +25,10 @@ class Building
   end
 
   def inspect
-    "Building{:id => #{id}, :type => '#{type_to_s}', :level => #{level}"
+    "Building{:id => #{id}, :type => '#{type_name}', :level => #{level}"
   end
 
-  def type_to_s
+  def type_name
     $types[type] || type
   end
-
 end

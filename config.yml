@@ -9,6 +9,7 @@
   14: :barracks
   15: :guard_house
   16: :training_ground
+  17: :stable
   19: :shipyard
   20: :warehouse
   21: :castle
@@ -21,52 +22,70 @@
   49: :ironmine
   50: :farm
 
-:filters:
-  :castle_city: [8, 14, 15, 16, 19, 22, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 50]
+:building_plans:
+  :castle_city: [8, 14, 15, 16, 17, 19, 22, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 50]
   :resource_city: [7, 8, 10, 11, 14, 15, 16, 47, 48, 49, 50]
   :for_new_city: [7, 10, 11, 47, 48, 49]
+  :towers: [35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46]
+  :all: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
+  :all_without_corrage: [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
+  :all_without_corrage_and_warehouse: [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
+  :all_without_corrage_and_towers: [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 47, 48, 49, 50]
 
 :worlds:
   59:
     :settings:
+      :session: 25f236c0-534b-4a14-be5d-e7ad3756595b
       :host: prodgame28.lordofultima.com
       :path: /139/Presentation/Service.svc/ajaxEndpoint/
-      :session: bc1613a1-2a7f-437b-9178-0745b7c16223
-      :cookie: s_ria=flash%2011%7Csilverlight%20not%20detected;s_cc=true; s_sq=%5B%5BB%5D%5D;__utma=74606733.205260829.1327229586.1330806969.1330836871.97;__utmb=74606733.1.10.1330836871; __utmc=74606733;__utmz=74606733.1330806969.96.54.utmcsr=prodgame28.lordofultima.com|utmccn=(referral)|utmcmd=referral|utmcct=/139/index.aspx
+      :cookie: s_ria=flash%2011%7Csilverlight%20not%20detected; s_cc=true; s_sq=%5B%5BB%5D%5D;__utma=74606733.156116825.1329120649.1331630032.1331634534.45;__utmc=74606733;__utmz=74606733.1331628169.43.28.utmcsr=prodgame28.lordofultima.com|utmccn=(referral)|utmcmd=referral|utmcct=/139/index.aspx
       :referer: http://prodgame28.lordofultima.com/139/index.aspx
     :cities:
       'first city':
         :id: 21168266
-        :filter: :castle_city
+        :trade_minister: [:out, :none, :none, :in]
+        :building_minister: :all_without_corrage
+      'ironman':
+        :id: 22085761
+        :trade_minister: [:in, :in, :out, :out]
+        :building_minister: :all
       'Kiev':
-         :id: 21561490
-         :filter: :resource_city
+        :id: 21561490
+        :trade_minister: [:none, :out, :none, :out]
+        :building_minister: :all_without_corrage_and_towers
+      'Krista':
+        :id: 22085776
+        :trade_minister: [:in, :in, :out, :out]
+        :building_minister: :all_without_corrage_and_towers
       'Odessa':
         :id: 21430417
-        :filter: :resource_city
+        :trade_minister: [:out, :out, :out, :in]
+        :building_minister: :all_without_corrage_and_towers
       'Oslo':
         :id: 21233801
-        :filter: :castle_city
+        :trade_minister: [:out, :out, :none, :none]
+        :building_minister: :all_without_corrage
+      'Rosa':
+        :id: 22151308
+        :trade_minister: [:in, :in, :in, :in]
+        :building_minister: :all_without_corrage
       'Sevlush':
         :id: 21758098
-        :filter: :resource_city
+        :trade_minister: [:out, :out, :out, :out]
+        :building_minister: :all_without_corrage_and_towers
+      'SOM':
+        :id: 21954703
+        :trade_minister: [:in, :in, :none, :out]
+        :building_minister: :all_without_corrage_and_towers
       'Sprite':
         :id: 21627025
-        :filter: :resource_city
+        :trade_minister: [:out, :out, :out, :out]
+        :building_minister: :all_without_corrage_and_towers
       'Uzhgorod':
         :id: 21692553
-        :filter: :resource_city
+        :trade_minister: [:out, :out, :out, :out]
+        :building_minister: :all
       'Vinogradov':
         :id: 21758087
-        :filter: :resource_city
-  :11:
-    :settings:
-      :host: prodgame01.lordofultima.com
-      :path: /151/Presentation/Service.svc/ajaxEndpoint/
-      :session: 81978db7-6820-4864-91a7-5333446cb541
-      :cookie: s_ria=flash%2011%7Csilverlight%20not%20detected; s_cc=true; s_sq=%5B%5BB%5D%5D; __utma=74606733.205260829.1327229586.1331373555.1331377353.115; __utmb=74606733.2.10.1331377353; __utmc=74606733; __utmz=74606733.1331364299.112.66.utmcsr=prodgame28.lordofultima.com|utmccn=(referral)|utmcmd=referral|utmcct=/139/index.aspx
-      :referer: http://prodgame01.lordofultima.com/151/index.aspx
-    :cities:
-      'first city':
-        :id: 16253153
-        :filter: :for_new_city
+        :trade_minister: [:out, :out, :out, :out]
+        :building_minister: :all
